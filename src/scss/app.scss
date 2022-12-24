@@ -19,11 +19,22 @@ html {
   background: $background;
 }
 
-.main {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 10rem;
-  flex-flow: column;
+.navbar-menu {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-menu {
+    display: none;
+  }
+}
+
+.navbar-burger {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar-burger {
+    display: block;
+  }
 }
